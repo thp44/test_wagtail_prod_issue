@@ -28,3 +28,5 @@ STATICFILES_STORAGE = 'website.forgiving_collect.ForgivingManifestStaticFilesSto
 for more info: https://timonweb.com/tutorials/make-djangos-collectstatic-command-forgiving/
 
 docker-compose -f docker-compose.prod.yml run web /usr/local/bin/python manage.py collectstatic
+
+Also, collectstatic should not give internal server error anyway, right?
