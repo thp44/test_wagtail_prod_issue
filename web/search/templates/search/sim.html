@@ -1,0 +1,28 @@
+<table class="table table-hover table-text-size">
+    <tr>
+        <th>Weight</th>
+        <th>Insulation System</th>
+        <th>Insulation Thickness</th>
+        <th>Int. Surface Temp.</th>
+        <th>U-value</th>
+        <th>Mould Risk</th>
+        <th>Algae Risk</th>
+        <th>Heat Loss</th>
+        <th>Environmental Impact</th>
+    </tr>
+
+    {% for result in results %}
+    <tr>
+        <td>{{ result.weight | floatformat:3 }}</td>
+        <td>{{ result.insulation_system }}</td>
+        <td>{{ result.insulation_thickness }}</td>
+        <td>{{ result.surface_temp }}</td>
+        <td>{{ result.u_value | floatformat:2 }}</td>
+        <td>{{ result.mould | floatformat:2 }}</td>
+        <td>{{ result.algae }}</td>
+        <td>{{ result.heat_loss }}</td>
+        <td>{{ result.environment_impact }}</td>
+    </tr>
+    {% endfor %}
+
+</table>

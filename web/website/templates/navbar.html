@@ -1,0 +1,35 @@
+{% load static wagtailcore_tags wagtailimages_tags menu_tags %}
+
+<nav class="navbar navbar-expand-md navbar-light bg-white">
+
+    <a class="navbar-brand pl-2 pr-4" href="{% slugurl 'home' %}">
+        <img src="{% static 'template/ribuild_logo_brun.png' %}" alt="RIBuild" width="100" />
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse collapse" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+            {% main_menu max_levels=3 template="menu/main_menu.html" %}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+
+            {% if request.user.is_authenticated %}
+            <!--<li class="nav-item"><a class="nav-link" href="todo">Profile</a></li>-->
+            <li class="nav-item"><a class="nav-link" href="{% url 'account_logout' %}">Log out</a></li>
+            {% else %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'account_login' %}">Log in</a></li>
+            <li class="nav-item"><a class="nav-link" href="{% url 'account_signup' %}">Sign up</a></li>
+            {% endif %}
+
+            <li>
+            </li>
+        </ul>
+
+    </div>
+</nav>
+
+

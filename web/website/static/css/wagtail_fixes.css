@@ -1,0 +1,35 @@
+.richtext-image.left {
+  float: left;
+  height: auto !important;
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em;
+  padding-left: 0em;
+
+}
+.richtext-image.right {
+  float: right;
+  height: auto !important;
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .5em;
+  padding-right: 0em;
+
+}
+.richtext-image.full-width {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: .5em;
+  padding-bottom: .5em;
+
+}
+
+.richtext-image {
+  width: 100% !important;
+  height: auto !important;
+}

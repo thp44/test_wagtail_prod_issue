@@ -1,0 +1,212 @@
+#map {
+    min-height: 250px;
+    height: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+.fix {
+    position: fixed !important;
+}
+
+.main-container {
+    height: 100% !important;
+    overflow: hidden !important;
+}
+
+.img {
+    width: 100% Important;
+}
+
+@media (min-height: 300px) {
+    nav {
+        position: sticky;
+        top: 0;
+    }
+}
+
+#carousel h4,
+#carousel p {
+    color: white;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+p.lede {
+    font-size: 2em;
+}
+
+#appearance1 .rs-range-color {
+    background-color: #5673E7;
+}
+
+#appearance1 .rs-path-color {
+    background-color: #dedede;
+}
+
+#appearance1 .rs-handle {
+    background-color: #000000;
+}
+
+#appearance1 .rs-border {
+    border-color: white;
+}
+
+#ex1Slider .slider-selection {
+    background: #BABABA;
+}
+
+.slider {
+    width: 80% !important;
+}
+
+.header_shadow {
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.25), 3px 3px 8px rgba(0, 0, 0, 0.35);
+}
+
+.masthead {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-section {
+    padding-top: 3em;
+    position: relative;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'lucida-sans-demibold-roman';
+    src: url('static/fonts/Lucida Sans Demibold Roman.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'lucida-sans-demibold-roman';
+    src: local('lucida-sans-demibold-roman'), url('/static/fonts/Lucida Sans Demibold Roman.ttf') format("truetype");
+}
+
+h1,
+h2,
+h3 {
+    font-family: "lucida-sans-demibold-roman";
+    color: #212529;
+}
+
+.head-font {
+    font-family: "lucida-sans-demibold-roman";
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+#exSlider .slider-selection {
+    background: #BABABA;
+    width: 100% important!;
+}
+
+.webtool-form {
+    padding: 2.5rem 2rem;
+    background: white;
+    box-shadow: 0 4px 8px -3px #BABABA;
+}
+
+.table-text-size {
+    font-size: 0.8em;
+}
+
+.navbar-brand>img {
+    margin-top: -0.5em;
+}
+
+.center-this {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px dashed deeppink;
+}
+
+.img-shadow {
+    -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.4));
+}
+
+.round-img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 300px;
+    -webkit-border-radius: 100%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 100%;
+    -moz-background-clip: padding;
+    border-radius: 100%;
+    background-clip: padding-box;
+    margin: 7px 0 0 5px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-hide {
+    box-shadow: 0 0 0 0 !important;
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+
+/* navbar hover */
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top:-8px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+    text-decoration: underline;
+    transform: rotate(-90deg);
+}
+
+.click-area {
+   display: inline-block;
+   position: relative;
+   z-index: 1;
+   padding: 1em;
+   margin: -1em;
+}

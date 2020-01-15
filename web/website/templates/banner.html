@@ -1,0 +1,32 @@
+{% load static wagtailcore_tags wagtailimages_tags menu_tags %} {% image self.banner_image min-1000x500 as banner_img %} {% if banner_img.url %}
+<header class="header masthead" style="height: {{ self.banner_height }}vh; background-image: url('{{ banner_img.url }}'); background-size: cover;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 text-center">
+                {% if self.banner_title %}
+                <h1 class="display-4 text-white header_shadow">{{ self.banner_title }}</h1>
+                <h6 class="lead text-white">{{ self.banner_subtitle|richtext }}</h6>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</header>
+
+{% elif self.youtube_url %}
+
+<div class="row h-{{ self.banner_height }} view hm-white-light jarallax align-items-center" data-jarallax='{"speed": 0.1}' data-jarallax-video="{{ self.youtube_url }}">
+    <div class="col-12 text-center" id="fade" onClick="lightbox_close();">
+
+        {% if self.banner_title %}
+        <h1 class="display-3 mb-2 mt-5 text-white header_shadow fadeInDown text-light font-weight-bold deepshd" data-wow-delay="0.3s">{{ self.banner_title }}</h1>
+        {% endif %} {% if self.banner_subtitle %}
+        <h6 class="lead text-white">{{ self.banner_subtitle|richtext }}</h6>
+        {% else %}
+        <img class="img-shadow pb-3" src="{% static 'img/ribuild_logo_hvid.png' %}" alt="RIBuild" width='20%' /> {% endif %}
+
+        <h1 data-width="1280" href="{{ self.youtube_url }}" video="videoPause" data-toggle="lightbox" data-wow-delay="0.4s"><i class="fas header_shadow text-white fa-play-circle"></i></h1>
+    </div>
+</div>
+
+
+{% endif %}
