@@ -9,7 +9,7 @@ http://0.0.0.0 works
 http://0.0.0.0/admin works
 
 
-DDEBUG: 'false' in docker-compose.prod.yml
+DEBUG: 'false' in docker-compose.prod.yml
 http://0.0.0.0 works
 http://0.0.0.0/admin ERROR:
 
