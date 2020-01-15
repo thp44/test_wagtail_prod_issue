@@ -15,3 +15,10 @@ http://0.0.0.0/admin ERROR:
 
 Internal server error
 Sorry, there seems to be an error. Please try again soon.
+
+
+Tried to collectstatic with
+
+#STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'website.forgiving_collect.ForgivingManifestStaticFilesStorage'
+for more info: https://timonweb.com/tutorials/make-djangos-collectstatic-command-forgiving/
