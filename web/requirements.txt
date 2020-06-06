@@ -6,7 +6,7 @@ cffi==1.12.3
 chardet==3.0.4
 cryptography>=2.5
 dataclasses==0.6
-django==2.2.8
+django==2.2.13
 gunicorn==19.9.0
 django-cogwheels==0.3
 django-extensions==2.2.5
