@@ -14,7 +14,7 @@ django-map-widgets==0.2.2
 django-modelcluster<6.0,>=5.0
 django-taggit<2.0,>=1.0
 django-treebeard==4.3
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 djongo==1.2.33
 draftjs-exporter==2.1.6
 html5lib==1.0.1
