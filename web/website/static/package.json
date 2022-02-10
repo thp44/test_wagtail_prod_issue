@@ -56,7 +56,7 @@
     "gulp-tap": "^1.0.1",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "node-sass-css-importer": "0.0.3",
     "plugin-error": "^1.0.1",
     "run-sequence": "^2.2.1"
